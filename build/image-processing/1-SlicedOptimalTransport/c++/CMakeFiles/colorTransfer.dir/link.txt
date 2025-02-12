@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/colorTransfer.dir/link.d CMakeFiles/colorTransfer.dir/colorTransfer.cpp.o -o colorTransfer  -lm

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/rasterizer.dir/link.d CMakeFiles/rasterizer.dir/rasterizer.cpp.o -o rasterizer  -lm

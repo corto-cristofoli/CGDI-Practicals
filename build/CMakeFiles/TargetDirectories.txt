@@ -1,0 +1,12 @@
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/edit_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/rebuild_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/1-SlicedOptimalTransport/c++/CMakeFiles/colorTransfer.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/1-SlicedOptimalTransport/c++/CMakeFiles/edit_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/1-SlicedOptimalTransport/c++/CMakeFiles/rebuild_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/2-BilateralFilter/c++/CMakeFiles/gaussianFilter.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/2-BilateralFilter/c++/CMakeFiles/bilateralFilter.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/2-BilateralFilter/c++/CMakeFiles/edit_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/2-BilateralFilter/c++/CMakeFiles/rebuild_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/3-Rasterization/c++/CMakeFiles/rasterizer.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/3-Rasterization/c++/CMakeFiles/edit_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/image-processing/3-Rasterization/c++/CMakeFiles/rebuild_cache.dir
