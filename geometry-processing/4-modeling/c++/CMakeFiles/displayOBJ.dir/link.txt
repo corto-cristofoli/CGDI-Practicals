@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/displayOBJ.dir/link.d CMakeFiles/displayOBJ.dir/displayOBJ.cpp.o -o displayOBJ  -lpolyscope -lgeometry-central

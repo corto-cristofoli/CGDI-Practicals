@@ -514,3 +514,440 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.43.1
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:379 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:423 (check_blas_libraries)"
+      - "build/_deps/geometry-central-src/cmake/FindSuiteSparse.cmake:198 (find_package)"
+      - "build/_deps/geometry-central-src/deps/CMakeLists.txt:108 (find_package)"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/geometry-central-src/cmake"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d36bb/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku »
+        /usr/bin/make  -f CMakeFiles/cmTC_d36bb.dir/build.make CMakeFiles/cmTC_d36bb.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku »
+        Building C object CMakeFiles/cmTC_d36bb.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_d36bb.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku/CheckFunctionExists.c
+        Linking C executable cmTC_d36bb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d36bb.dir/link.txt --verbose=1
+        /usr/bin/ld : CMakeFiles/cmTC_d36bb.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+        CheckFunctionExists.c:(.text+0x10) : référence indéfinie vers « sgemm_ »
+        collect2: erreur: ld a retourné le statut de sortie 1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_d36bb.dir/CheckFunctionExists.c.o -o cmTC_d36bb
+        make[2]: *** [CMakeFiles/cmTC_d36bb.dir/build.make:102: cmTC_d36bb] Error 1
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku »
+        make[1]: *** [Makefile:134: cmTC_d36bb/fast] Error 2
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-fcbiku »
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:475 (find_package)"
+      - "build/_deps/geometry-central-src/cmake/FindSuiteSparse.cmake:198 (find_package)"
+      - "build/_deps/geometry-central-src/deps/CMakeLists.txt:108 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/geometry-central-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5b9a9/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02 »
+        /usr/bin/make  -f CMakeFiles/cmTC_5b9a9.dir/build.make CMakeFiles/cmTC_5b9a9.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02 »
+        Building C object CMakeFiles/cmTC_5b9a9.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5b9a9.dir/src.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02/src.c
+        Linking C executable cmTC_5b9a9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b9a9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_5b9a9.dir/src.c.o -o cmTC_5b9a9
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02 »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-6vbr02 »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:379 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindBLAS.cmake:1329 (check_blas_libraries)"
+      - "build/_deps/geometry-central-src/cmake/FindSuiteSparse.cmake:198 (find_package)"
+      - "build/_deps/geometry-central-src/deps/CMakeLists.txt:108 (find_package)"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/geometry-central-src/cmake"
+    buildResult:
+      variable: "BLAS_blas_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dea19/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH »
+        /usr/bin/make  -f CMakeFiles/cmTC_dea19.dir/build.make CMakeFiles/cmTC_dea19.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH »
+        Building C object CMakeFiles/cmTC_dea19.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_dea19.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH/CheckFunctionExists.c
+        Linking C executable cmTC_dea19
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dea19.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_dea19.dir/CheckFunctionExists.c.o -o cmTC_dea19  /usr/lib/libblas.so
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-J8r6GH »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:399 (check_lapack_libraries)"
+      - "build/_deps/geometry-central-src/cmake/FindSuiteSparse.cmake:206 (find_package)"
+      - "build/_deps/geometry-central-src/deps/CMakeLists.txt:108 (find_package)"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/geometry-central-src/cmake"
+    buildResult:
+      variable: "LAPACK_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6069f/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII »
+        /usr/bin/make  -f CMakeFiles/cmTC_6069f.dir/build.make CMakeFiles/cmTC_6069f.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII »
+        Building C object CMakeFiles/cmTC_6069f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_6069f.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII/CheckFunctionExists.c
+        Linking C executable cmTC_6069f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6069f.dir/link.txt --verbose=1
+        /usr/bin/ld : CMakeFiles/cmTC_6069f.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+        CheckFunctionExists.c:(.text+0x10) : référence indéfinie vers « cheev_ »
+        collect2: erreur: ld a retourné le statut de sortie 1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_6069f.dir/CheckFunctionExists.c.o -o cmTC_6069f  /usr/lib/libblas.so -lm -ldl
+        make[2]: *** [CMakeFiles/cmTC_6069f.dir/build.make:103: cmTC_6069f] Error 1
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII »
+        make[1]: *** [Makefile:134: cmTC_6069f/fast] Error 2
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-oF1xII »
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:220 (check_function_exists)"
+      - "/usr/share/cmake/Modules/FindLAPACK.cmake:712 (check_lapack_libraries)"
+      - "build/_deps/geometry-central-src/cmake/FindSuiteSparse.cmake:206 (find_package)"
+      - "build/_deps/geometry-central-src/deps/CMakeLists.txt:108 (find_package)"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/geometry-central-src/cmake"
+    buildResult:
+      variable: "LAPACK_lapack_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5489e/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4 »
+        /usr/bin/make  -f CMakeFiles/cmTC_5489e.dir/build.make CMakeFiles/cmTC_5489e.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4 »
+        Building C object CMakeFiles/cmTC_5489e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_5489e.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4/CheckFunctionExists.c
+        Linking C executable cmTC_5489e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5489e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_5489e.dir/CheckFunctionExists.c.o -o cmTC_5489e  /usr/lib/liblapack.so /usr/lib/libblas.so
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4 »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-3jEGP4 »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "build/_deps/polyscope-src/deps/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/deps/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0c72a/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q »
+        /usr/bin/make  -f CMakeFiles/cmTC_0c72a.dir/build.make CMakeFiles/cmTC_0c72a.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q »
+        Building C object CMakeFiles/cmTC_0c72a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_0c72a.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q/CheckFunctionExists.c
+        Linking C executable cmTC_0c72a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c72a.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_0c72a.dir/CheckFunctionExists.c.o -o cmTC_0c72a  /usr/lib/libX11.so /usr/lib/libXext.so
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5T897Q »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "build/_deps/polyscope-src/deps/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/deps/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4a518/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO »
+        /usr/bin/make  -f CMakeFiles/cmTC_4a518.dir/build.make CMakeFiles/cmTC_4a518.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO »
+        Building C object CMakeFiles/cmTC_4a518.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_4a518.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO/CheckFunctionExists.c
+        Linking C executable cmTC_4a518
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a518.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_4a518.dir/CheckFunctionExists.c.o -o cmTC_4a518
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-5UlZDO »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "build/_deps/polyscope-src/deps/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/deps/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b46b6/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm »
+        /usr/bin/make  -f CMakeFiles/cmTC_b46b6.dir/build.make CMakeFiles/cmTC_b46b6.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm »
+        Building C object CMakeFiles/cmTC_b46b6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_b46b6.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm/CheckFunctionExists.c
+        Linking C executable cmTC_b46b6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b46b6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_b46b6.dir/CheckFunctionExists.c.o -o cmTC_b46b6
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-dcXwCm »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "build/_deps/polyscope-src/deps/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/deps/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3d333/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S »
+        /usr/bin/make  -f CMakeFiles/cmTC_3d333.dir/build.make CMakeFiles/cmTC_3d333.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S »
+        Building C object CMakeFiles/cmTC_3d333.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_3d333.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S/CheckFunctionExists.c
+        Linking C executable cmTC_3d333
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d333.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_3d333.dir/CheckFunctionExists.c.o -o cmTC_3d333
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-MQlp4S »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "build/_deps/polyscope-src/deps/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/deps/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7ab26/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ »
+        /usr/bin/make  -f CMakeFiles/cmTC_7ab26.dir/build.make CMakeFiles/cmTC_7ab26.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ »
+        Building C object CMakeFiles/cmTC_7ab26.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_7ab26.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ/CheckFunctionExists.c
+        Linking C executable cmTC_7ab26
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ab26.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_7ab26.dir/CheckFunctionExists.c.o -o cmTC_7ab26
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-N51SBQ »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "build/_deps/polyscope-src/deps/glfw/CMakeLists.txt:211 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/deps/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6cef1/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN »
+        /usr/bin/make  -f CMakeFiles/cmTC_6cef1.dir/build.make CMakeFiles/cmTC_6cef1.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN »
+        Building C object CMakeFiles/cmTC_6cef1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_6cef1.dir/CheckFunctionExists.c.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN/CheckFunctionExists.c
+        Linking C executable cmTC_6cef1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cef1.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_6cef1.dir/CheckFunctionExists.c.o -o cmTC_6cef1  -lICE
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-jtxhfN »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:98 (try_compile)"
+      - "build/_deps/polyscope-src/src/CMakeLists.txt:80 (CHECK_INCLUDE_FILE_CXX)"
+    checks:
+      - "Looking for C++ include EGL/egl.h"
+    directories:
+      source: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a"
+      binary: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-w"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CPM_modules;/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/cmake"
+    buildResult:
+      variable: "HAVE_EGL_LIB"
+      cached: true
+      stdout: |
+        Change Dir: '/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d1eb8/fast
+        make[1] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a »
+        /usr/bin/make  -f CMakeFiles/cmTC_d1eb8.dir/build.make CMakeFiles/cmTC_d1eb8.dir/build
+        make[2] : on entre dans le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a »
+        Building CXX object CMakeFiles/cmTC_d1eb8.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -std=c++17 -o CMakeFiles/cmTC_d1eb8.dir/CheckIncludeFile.cxx.o -c /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_d1eb8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1eb8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_d1eb8.dir/CheckIncludeFile.cxx.o -o cmTC_d1eb8
+        make[2] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a »
+        make[1] : on quitte le répertoire « /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles/CMakeScratch/TryCompile-vRgn1a »
+        
+      exitCode: 0
+...

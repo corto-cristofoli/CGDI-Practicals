@@ -1,0 +1,4 @@
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/geometry-processing/4-modeling/c++/CMakeFiles/simpleTest.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/geometry-processing/4-modeling/c++/CMakeFiles/displayOBJ.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/geometry-processing/4-modeling/c++/CMakeFiles/edit_cache.dir
+/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/geometry-processing/4-modeling/c++/CMakeFiles/rebuild_cache.dir

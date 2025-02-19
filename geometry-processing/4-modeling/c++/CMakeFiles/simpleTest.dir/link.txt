@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/simpleTest.dir/link.d CMakeFiles/simpleTest.dir/simpleTest.cpp.o -o simpleTest  -lpolyscope

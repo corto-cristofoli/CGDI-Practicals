@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/CMakeFiles/eigen-populate"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/CMakeFiles/eigen-populate.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/CMakeFiles/eigen-populate-complete.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-build.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-configure.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-download.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-install.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-patch.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-test.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/_deps/eigen-subbuild/eigen-populate-prefix/src/eigen-populate-stamp/eigen-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"eigen-populate"
+		],
+		"name" : "eigen-populate"
+	}
+}

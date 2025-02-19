@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/deps
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = -std=c++17
 

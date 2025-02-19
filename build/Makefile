@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/CMakeFiles /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build//CMakeFiles/progress.marks
@@ -168,6 +213,175 @@ rasterizer/fast:
 	$(MAKE) $(MAKESILENT) -f image-processing/3-Rasterization/c++/CMakeFiles/rasterizer.dir/build.make image-processing/3-Rasterization/c++/CMakeFiles/rasterizer.dir/build
 .PHONY : rasterizer/fast
 
+#=============================================================================
+# Target rules for targets named geometry-central
+
+# Build rule for target.
+geometry-central: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometry-central
+.PHONY : geometry-central
+
+# fast build rule for target.
+geometry-central/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/geometry-central-build/src/CMakeFiles/geometry-central.dir/build.make _deps/geometry-central-build/src/CMakeFiles/geometry-central.dir/build
+.PHONY : geometry-central/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/deps/glad/src/CMakeFiles/glad.dir/build.make _deps/polyscope-build/deps/glad/src/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/deps/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/polyscope-build/deps/glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/deps/glfw/src/CMakeFiles/glfw.dir/build.make _deps/polyscope-build/deps/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named glm
+
+# Build rule for target.
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
+.PHONY : glm
+
+# fast build rule for target.
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/deps/glm/glm/CMakeFiles/glm.dir/build.make _deps/polyscope-build/deps/glm/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
+
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/deps/imgui/CMakeFiles/imgui.dir/build.make _deps/polyscope-build/deps/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named stb
+
+# Build rule for target.
+stb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb
+.PHONY : stb
+
+# fast build rule for target.
+stb/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/deps/stb/CMakeFiles/stb.dir/build.make _deps/polyscope-build/deps/stb/CMakeFiles/stb.dir/build
+.PHONY : stb/fast
+
+#=============================================================================
+# Target rules for targets named polyscope
+
+# Build rule for target.
+polyscope: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 polyscope
+.PHONY : polyscope
+
+# fast build rule for target.
+polyscope/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/polyscope-build/src/CMakeFiles/polyscope.dir/build.make _deps/polyscope-build/src/CMakeFiles/polyscope.dir/build
+.PHONY : polyscope/fast
+
+#=============================================================================
+# Target rules for targets named simpleTest
+
+# Build rule for target.
+simpleTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simpleTest
+.PHONY : simpleTest
+
+# fast build rule for target.
+simpleTest/fast:
+	$(MAKE) $(MAKESILENT) -f geometry-processing/4-modeling/c++/CMakeFiles/simpleTest.dir/build.make geometry-processing/4-modeling/c++/CMakeFiles/simpleTest.dir/build
+.PHONY : simpleTest/fast
+
+#=============================================================================
+# Target rules for targets named displayOBJ
+
+# Build rule for target.
+displayOBJ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 displayOBJ
+.PHONY : displayOBJ
+
+# fast build rule for target.
+displayOBJ/fast:
+	$(MAKE) $(MAKESILENT) -f geometry-processing/4-modeling/c++/CMakeFiles/displayOBJ.dir/build.make geometry-processing/4-modeling/c++/CMakeFiles/displayOBJ.dir/build
+.PHONY : displayOBJ/fast
+
+#=============================================================================
+# Target rules for targets named laplacian
+
+# Build rule for target.
+laplacian: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 laplacian
+.PHONY : laplacian
+
+# fast build rule for target.
+laplacian/fast:
+	$(MAKE) $(MAKESILENT) -f geometry-processing/5-LaplacianSmoothing/c++/CMakeFiles/laplacian.dir/build.make geometry-processing/5-LaplacianSmoothing/c++/CMakeFiles/laplacian.dir/build
+.PHONY : laplacian/fast
+
+#=============================================================================
+# Target rules for targets named geomproc
+
+# Build rule for target.
+geomproc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geomproc
+.PHONY : geomproc
+
+# fast build rule for target.
+geomproc/fast:
+	$(MAKE) $(MAKESILENT) -f geometry-processing/6-GeomProcessing/c++/CMakeFiles/geomproc.dir/build.make geometry-processing/6-GeomProcessing/c++/CMakeFiles/geomproc.dir/build
+.PHONY : geomproc/fast
+
+#=============================================================================
+# Target rules for targets named MCLaplace
+
+# Build rule for target.
+MCLaplace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MCLaplace
+.PHONY : MCLaplace
+
+# fast build rule for target.
+MCLaplace/fast:
+	$(MAKE) $(MAKESILENT) -f geometry-processing/7-MonteCarloGeometryProcessing/c++/CMakeFiles/MCLaplace.dir/build.make geometry-processing/7-MonteCarloGeometryProcessing/c++/CMakeFiles/MCLaplace.dir/build
+.PHONY : MCLaplace/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,11 +389,28 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... update_mappings"
+	@echo "... MCLaplace"
 	@echo "... bilateralFilter"
 	@echo "... colorTransfer"
+	@echo "... displayOBJ"
 	@echo "... gaussianFilter"
+	@echo "... geometry-central"
+	@echo "... geomproc"
+	@echo "... glad"
+	@echo "... glfw"
+	@echo "... glm"
+	@echo "... imgui"
+	@echo "... laplacian"
+	@echo "... polyscope"
 	@echo "... rasterizer"
+	@echo "... simpleTest"
+	@echo "... stb"
 .PHONY : help
 
 

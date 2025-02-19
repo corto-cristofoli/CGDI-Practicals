@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/CMakeFiles/polyscope-populate"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/CMakeFiles/polyscope-populate.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/CMakeFiles/polyscope-populate-complete.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-build.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-configure.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-download.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-install.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-patch.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-test.rule"
+		},
+		{
+			"file" : "/home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-subbuild/polyscope-populate-prefix/src/polyscope-populate-stamp/polyscope-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"polyscope-populate"
+		],
+		"name" : "polyscope-populate"
+	}
+}

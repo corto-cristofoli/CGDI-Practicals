@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/MCLaplace.dir/link.d CMakeFiles/MCLaplace.dir/MCLaplace.cpp.o -o MCLaplace  -lm
