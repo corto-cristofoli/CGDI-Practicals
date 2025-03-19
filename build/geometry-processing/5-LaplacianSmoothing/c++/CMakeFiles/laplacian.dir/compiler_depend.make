@@ -914,6 +914,7 @@ geometry-processing/5-LaplacianSmoothing/c++/laplacian: _deps/geometry-central-b
   /usr/lib/libtbbmalloc.so \
   /usr/lib/libumfpack.so \
   /usr/lib/libxcb.so.1 \
+  /usr/lib32/libgfortran.so.5 \
   geometry-processing/5-LaplacianSmoothing/c++/CMakeFiles/laplacian.dir/laplacian.cpp.o
 
 
@@ -1416,6 +1417,8 @@ _deps/geometry-central-build/deps/eigen-src/Eigen/src/SparseLU/SparseLU_Utils.h:
 _deps/polyscope-src/deps/glm/glm/detail/type_vec2.hpp:
 
 _deps/polyscope-src/deps/glm/glm/ext/vector_bool1_precision.hpp:
+
+/usr/lib32/libgfortran.so.5:
 
 _deps/polyscope-src/include/polyscope/persistent_value.h:
 

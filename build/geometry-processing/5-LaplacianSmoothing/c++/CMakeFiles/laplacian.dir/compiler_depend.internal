@@ -916,5 +916,6 @@ geometry-processing/5-LaplacianSmoothing/c++/laplacian
  /usr/lib/libtbbmalloc.so
  /usr/lib/libumfpack.so
  /usr/lib/libxcb.so.1
+ /usr/lib32/libgfortran.so.5
  /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/geometry-processing/5-LaplacianSmoothing/c++/CMakeFiles/laplacian.dir/laplacian.cpp.o
 

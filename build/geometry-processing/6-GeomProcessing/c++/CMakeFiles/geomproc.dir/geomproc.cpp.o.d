@@ -792,11 +792,4 @@ geometry-processing/6-GeomProcessing/c++/CMakeFiles/geomproc.dir/geomproc.cpp.o:
  /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/surface_vector_quantity.h \
  /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/vector_quantity.h \
  /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/vector_quantity.ipp \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/surface_mesh.ipp \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud.h \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud_quantity.h \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud_color_quantity.h \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud_parameterization_quantity.h \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud_scalar_quantity.h \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud_vector_quantity.h \
- /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/point_cloud.ipp
+ /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/_deps/polyscope-src/src/../include/polyscope/surface_mesh.ipp

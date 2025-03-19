@@ -56,6 +56,7 @@ laplacian: \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libgomp.so.1 \
+  /usr/lib32/libgfortran.so.5 \
   /usr/lib/libgfortran.so.5 \
   /usr/lib/libXau.so.6 \
   /usr/lib/libXdmcp.so.6
@@ -173,6 +174,8 @@ CMakeFiles/laplacian.dir/laplacian.cpp.o:
 /usr/lib/ld-linux-x86-64.so.2:
 
 /usr/lib/libgomp.so.1:
+
+/usr/lib32/libgfortran.so.5:
 
 /usr/lib/libgfortran.so.5:
 

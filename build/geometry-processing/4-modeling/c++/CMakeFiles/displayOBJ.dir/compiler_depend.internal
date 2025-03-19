@@ -909,5 +909,6 @@ geometry-processing/4-modeling/c++/displayOBJ
  /usr/lib/libtbbmalloc.so
  /usr/lib/libumfpack.so
  /usr/lib/libxcb.so.1
+ /usr/lib32/libgfortran.so.5
  /home/corto/Documents/Devoirs/2024-2025/S2/ComputerGraphics/CGDI-Practicals/build/geometry-processing/4-modeling/c++/CMakeFiles/displayOBJ.dir/displayOBJ.cpp.o
 

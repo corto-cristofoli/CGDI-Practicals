@@ -914,10 +914,19 @@ geometry-processing/6-GeomProcessing/c++/geomproc: _deps/geometry-central-build/
   /usr/lib/libtbbmalloc.so \
   /usr/lib/libumfpack.so \
   /usr/lib/libxcb.so.1 \
+  /usr/lib32/libGLdispatch.so.0 \
+  /usr/lib32/libXau.so.6 \
+  /usr/lib32/libXdmcp.so.6 \
+  /usr/lib32/libgfortran.so.5 \
+  /usr/lib32/libxcb.so.1 \
   geometry-processing/6-GeomProcessing/c++/CMakeFiles/geomproc.dir/geomproc.cpp.o
 
 
 geometry-processing/6-GeomProcessing/c++/CMakeFiles/geomproc.dir/geomproc.cpp.o:
+
+/usr/lib32/libxcb.so.1:
+
+/usr/lib32/libXau.so.6:
 
 /usr/lib/libxcb.so.1:
 
@@ -1417,6 +1426,8 @@ _deps/polyscope-src/deps/glm/glm/detail/type_vec2.hpp:
 
 _deps/polyscope-src/deps/glm/glm/ext/vector_bool1_precision.hpp:
 
+/usr/lib32/libgfortran.so.5:
+
 _deps/polyscope-src/include/polyscope/persistent_value.h:
 
 _deps/geometry-central-build/deps/eigen-src/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h:
@@ -1592,6 +1603,8 @@ _deps/geometry-central-build/deps/eigen-src/Eigen/src/Geometry/Transform.h:
 _deps/polyscope-src/include/polyscope/histogram.h:
 
 _deps/geometry-central-build/deps/eigen-src/Eigen/src/Core/Inverse.h:
+
+/usr/lib32/libGLdispatch.so.0:
 
 _deps/geometry-central-build/deps/eigen-src/Eigen/src/Geometry/Quaternion.h:
 
@@ -2618,6 +2631,8 @@ _deps/geometry-central-build/deps/eigen-src/Eigen/src/Core/util/Memory.h:
 _deps/polyscope-src/include/polyscope/surface_scalar_quantity.h:
 
 _deps/polyscope-src/include/polyscope/context.h:
+
+/usr/lib32/libXdmcp.so.6:
 
 _deps/geometry-central-build/deps/eigen-src/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h:
 
